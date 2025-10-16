@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img id="side-image" src="./imgs/background.avif" alt="Fern leaves">
+    <div id="side-image-container" class="container">
+        <img id="side-image" src="./imgs/background.avif" alt="Fern leaves">
+        <div id="odin-banner">
+            <img id="logo" src="./imgs/odin-lined.png" alt="Lined art style of Odin head logo">
+            <div id="logo-text">ODIN</div>
+        </div>
+        <div id="photo-credit">Photo by Hailee West on <a id="photo-link" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></div>
+    </div>
+    
     <div class="container">
         <div class="header">
             <div>
@@ -29,31 +37,31 @@
                     <div class="form-row">
                         <div class="form-col">
                             <label for="first_name">First Name</label>
-                            <input type="text" id="first_name">
+                            <input type="text" id="first_name" required>
                         </div>
                         <div class="form-col">
                             <label for="last_name">Last Name</label>
-                            <input type="text" id="last_name">
+                            <input type="text" id="last_name" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-col">
                             <label for="user_email">Email</label>
-                            <input type="email" id="user_email">
+                            <input type="email" id="user_email" required>
                         </div>
                         <div class="form-col">
                             <label for="phone_number">Phone Number</label>
-                            <input type="text" id="phone_number">
+                            <input type="text" id="phone_number" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-col">
                             <label for="user_password">Password</label>
-                            <input type="text" id="user_password">
+                            <input type="password" id="user_password" required minlength="8" maxlength="20">
                         </div>
                         <div class="form-col">
                             <label for="user_password2">Confirm Password</label>
-                            <input type="text" id="user_password2">
+                            <input type="password" id="user_password2" required minlength="8" maxlength="20">
                         </div>
                     </div>
                 </div>
